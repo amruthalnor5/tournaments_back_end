@@ -5,7 +5,6 @@ const path = require('path')
 var app = express()
 // Defining the port number. 
 // It is important to set to process.env.PORT 
-// since Lambda will define the PORT explicitly
 const PORT = process.env.PORT || 8080
 // Supporting every type of body content type
 app.use(bodyParser.json())
